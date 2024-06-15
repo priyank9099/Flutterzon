@@ -130,34 +130,7 @@ Flutterzon is a purpose-driven initiative, with the primary goal of creating an 
 
 - **Video Link** - [https://drive.google.com/uc?id=1fjZSYIpgDcpcgAc-hevb39RrpyiNLYQm](https://drive.google.com/uc?id=1fjZSYIpgDcpcgAc-hevb39RrpyiNLYQm)
 
-## Run Locally
 
-- Clone this repository
-
-  ```bash
-  https://github.com/tejasbadone/flutterzon_provider.git
-  ```
-
-- Migrate to the root directory and install all the required dependencies by running
-  ```bash
-  flutter pub get
-  ```
-- Create MongoDB Project & Cluster
-- Connect to the cluster using Drivers and get the connection string.
-- I've created a `config.env` file at the root directory of the project, containing the essential details for the setup, you could also create one or update the necessary values directly, it's totally up to you.
-- Head to `server/index.js` and replace the userName, password, and connection string.
-- Head to `lib/constants/global_variables.dart` and replace the `uri` with your IP address.
-- Create Cloudinary Project, and enable the unsigned operation in settings.
-- Head to `lib/features/admin/services/admin_services.dart`, update the `cloudinaryCloudName` and `cloudinaryUploadPreset` present in the `sellProducts()` method.
-- Now, run the following commands, to migrate to the server folder, install the necessary dependencies, and run the server locally.
-  ```
-  cd server
-  npm install
-  npm run dev (to run index.js using nodemon)
-  OR
-  npm start (to run index.js)
-  ```
-  Please star⭐ the repo if you like what you see😉.
 
 ## Download
 
